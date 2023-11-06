@@ -8,6 +8,7 @@ namespace OOPAccessLevels.Library
 {
     public class SedantCar:Car
     {
+        private Wheel sedantWheel = new Wheel();
         void SedantPrintManufacturer()
         {
             // Car private field not accessible in child class
@@ -22,6 +23,14 @@ namespace OOPAccessLevels.Library
             // Car internal field accessible in child class
             // from within the same project
             Console.WriteLine(year);
+            Console.WriteLine(sedantWheel.name);
+        }
+        protected class SedantWheel : Wheel
+        {
+            public void SpinWheel()
+            {
+                Console.WriteLine(name);
+            }
         }
     }
 }

@@ -9,6 +9,7 @@ namespace OOPAccessLevels
 {
     public class SubCar:Car
     {
+        private Wheel subWheel = new Wheel();
         void SubPrintManufacturer()
         {
             // Car private field not accessible in child class
@@ -23,6 +24,10 @@ namespace OOPAccessLevels
             // Car internal field not accessible in child class
             // from another project
             // Console.WriteLine(year);
+        }
+        private class SubWheel:Wheel
+        {
+
         }
     }
 }

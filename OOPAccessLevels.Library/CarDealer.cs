@@ -20,10 +20,10 @@ namespace OOPAccessLevels.Library
             // Console.WriteLine(car.model);
             // Car private protected field not accessible in child class
             // from within the same project
-            // Console.WriteLine(modelVariant);
-            // Car internal field not accessible in child class
+            // Console.WriteLine(car.modelVariant);
+            // Car internal field accessible in child class
             // from within the same project
-            // Console.WriteLine(year);
+            Console.WriteLine(car.year);
         }
     }
 }
